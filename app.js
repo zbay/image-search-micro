@@ -26,7 +26,7 @@ var port = process.env.PORT || 8080;
     
 index(app);
 search(app);
-//latest(app);
+latest(app);
 
 app.listen(port, function() {
     console.log('Node.js listening on port ' + port);
