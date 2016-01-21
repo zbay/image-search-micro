@@ -10,8 +10,8 @@ var bodyParser = require('body-parser');
 var index = require('./routes/index.js');
 var search = require('./routes/search.js');
 var latest = require('./routes/latest.js');
-//mongoose.connect('mongodb://heroku_bdpzl0fg:lvaq24pju65pel7t952fdpuvgk@ds047085.mongolab.com:47085/heroku_bdpzl0fg', function (err, db)
-mongoose.connect('mongodb://localhost:27017/image-search-micro', function (err, db)
+mongoose.connect('mongodb://heroku_zx99q998:skpvu9ikplvv6ul2oa2hfgmfdo@ds047325.mongolab.com:47325/heroku_zx99q998', function (err, db)
+//mongoose.connect('mongodb://localhost:27017/image-search-micro', function (err, db)
 {
  if (err) {
       throw new Error('Database failed to connect!');
