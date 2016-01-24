@@ -10,7 +10,8 @@ var bodyParser = require('body-parser');
 var index = require('./routes/index.js');
 var search = require('./routes/search.js');
 var latest = require('./routes/latest.js');
-mongoose.connect('mongodb://heroku_zx99q998:skpvu9ikplvv6ul2oa2hfgmfdo@ds047325.mongolab.com:47325/heroku_zx99q998', function (err, db)
+var dotenv = require("dotenv");
+mongoose.connect(process.env.MONGOLAB_URI, function (err, db)
 //mongoose.connect('mongodb://localhost:27017/image-search-micro', function (err, db)
 {
  if (err) {
